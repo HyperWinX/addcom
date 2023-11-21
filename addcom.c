@@ -20,8 +20,6 @@ int main(int argc, char* argv[]){
         strcpy(command, "cp ");
         strcat(command, current_path);
         strcat(command, " /bin/addcom > /dev/null");
-        printf(command);
-        scanf(NULL);
         int retcode = system(command);
         switch (retcode){
             case -1:
